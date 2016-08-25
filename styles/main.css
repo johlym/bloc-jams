@@ -62,6 +62,11 @@ body.landing {
     color: rgb(233,50,117);
 }
 
+.links-container .navbar-link:hover {
+    background-color: #fff;
+    color: rgb(233,50,117);
+}
+
 .container {
     margin: 0 auto;
     max-width: 64rem;
