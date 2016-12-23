@@ -79,6 +79,10 @@ window.onload = function() {
 
   var findParentByClassName = function(element, targetClass) {
     if (element) {
+        if element.closest(targetClass) == null {
+            console.log('A parent matching the class specified in targetClass was not found.')
+            return
+        }
         var currentParent = element.parentElement;
         while (currentParent.className != targetClass && currentParent.className !== null) {
             currentParent = currentParent.parentElement;
